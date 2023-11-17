@@ -1,0 +1,6 @@
+palette
+
+330d69 mov
+30c9cd galazio
+3e4786 mple
+4096b2 metrio mple
