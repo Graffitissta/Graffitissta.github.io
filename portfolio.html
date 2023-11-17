@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <title>portfolio</title>
+  <style>
+
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient(to top, #4096b2 , #4096b2  5%, #2c0d69  95%, #2c0d69 );
+      width: 100%;
+      height: 100%;
+}
+    
+
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+    top: 0; left: 0; right: 0;
+    background: rgb(0, 0, 0, .2)   ;
+    padding: 0.7rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
+    color: #ffffff;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 120px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+ .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ;
+ }
+
+ .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #3e4786);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: height 0.5s;
+}
+
+.layer p{
+font-size: 15px;
+
+}
+
+
+ .layer h3,p {
+    font-weight: 500;
+    margin-bottom:20px;
+    text-align: center;
+
+ }
+
+ .layer a {
+    margin-top: 20px;
+    color: #3e4786  !important;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+ }
+
+
+ .footer-link {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #3e4786;
+      text-decoration: none;
+      font-size: 22px;
+      line-height: 60px;
+      background: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-link i {
+      color: #4096b2 ;
+      font-size: 32px ;
+    }
+ .work:hover img{
+    transform: scale(1.1);
+ }
+
+ .work:hover .layer {
+    height: 100%;
+ }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Graphic Design</h1>
+    </div>
+  </header>
+
+ <div id="portfolio">
+    <div class="container">
+        <div class="work-list"> 
+
+            <div class="work">
+                <img src="logos.webp" alt="">
+                <div class="layer">
+                    <h3> Logos</h3>
+                    <p> Here are some logos i desgigned and how they work on mockups</p>
+                    <a href="logos.html"> <i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="menu.webp" alt="">
+                <div class="layer">
+                    <h3> Menus and brochures </h3>
+                    <p> Some menus and brochures i made</p>
+                    <a href="menus.html"> <i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="banners.webp" alt="">
+                <div class="layer">
+                    <h3> Banners </h3>
+                    <p> Banners for social media </p>
+                    <a href="banners.html"> <i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+          <div class="work">
+              <img src="book2.jpg" alt="">
+              <div class="layer">
+                  <h3> Books and magazines </h3>
+                  <p> Here are some books i designed and how they work on mockups </p>
+                  <a href="books.html"> <i class="fas fa-external-link-alt"></i> </a>
+                  
+              </div>
+            </div>
+
+           
+            <a href="index.html" class="footer-link"> <i class="fas fa-home"></i> </a>
+
+    </div>
+   </div>
+   
+
+</body>
+</html>
+
+

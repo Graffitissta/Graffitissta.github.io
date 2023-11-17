@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e35a1d60de.css" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header"> Home </a></li>
+                    <li> <a href="#about"> About </a></li>
+                    <li> <a href="#portfolio"> Portoflio </a></li>
+                
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Katerina Ailamaki</h1>
+                <h3>Graphic & Web Designer</h3>
+            </div>
+            
+        </div>
+    </div>
+    <!------about------>
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about photo.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub">About me</h1>
+                <p>Hello, my name is Katerina Ailamaki and i am a graphic designer from Greece. My design journey began at the University of West Attica, where I cultivated a deep love for graphic design. While exploring web design during my studies, I crafted an e-shop using Adobe XD, sparking a passion I further pursued post-graduation. Dedicated to enhancing my skills, I delved into coding with HTML, CSS, and JavaScript, and mastered the intricacies of WordPress.Although I haven't yet stepped into the professional world, my dedication and enthusiasm are unwavering. With a blend of creativity and attention to detail, I'm eager to contribute my skills to the dynamic world of graphic and web design.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span> Graphic Design </span> <br> Proficient in Photoshop, Illustrator, and InDesign, I create captivating visuals that communicate effectively. Fueled by a passion for art, I'm dedicated to crafting impactful designs </li>
+                        <li> <span> Web Design </span> <br> Passionate about web design, I blend creativity with technical expertise in Adobe XD, HTML, CSS, and JavaScript. Crafting visually stunning, user-friendly WordPress websites is my forte </li>
+                        <li> <span> UI/UX </span> <br> As a UX/UI enthusiast, I blend creativity with a user-centric approach, crafting intuitive and engaging digital interfaces using tools like Adobe XD </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span> Jun 2020 - Aug 2020 </span> <br> 
+                        Miss Reina <br> Intership in e-shop Miss Reina </li>
+                        <li> <span> Feb 2018 - Nov 2018 </span> <br> Digital Lab <br> Graphic designer and customer service (printing and photo copies) at printing shop Digiral Lab</li>
+                        <li> <span> Oct 2021 - Nov 2021 </span> <br> Zeus international <br> Graphic designer  </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span> University of West Attica </span> <br> Bachelor's degree in Graphic Design <br> 2015-2021 </li>
+                        <li> <span> IEK Intergraphics </span> <br> Web design <br> 2022-2023 </li>
+                        <li> <span> Google UX Design by Google on Coursera </span> <br> Jun 2021-Dec 2021 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!--------------------portfolio----------------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub"> My Work </h1>
+        <div class="work-list"> 
+            <div class="work">
+                <img src="ddd.jpg" alt="">
+                <div class="layer">
+                    <h3> Graphic design </h3>
+                    <p> Here you can see some of my Graphic design projects, like logos, magazine layouts,menus etc.</p>
+                    <a href="portfolio.html"> <i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pt1.jpg" alt="">
+                <div class="layer">
+                    <h3> UI/UX </h3>
+                    <p> My final project for the university, using adobe XD</p>
+                    <a href="ui.html"> <i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="code.jpg" alt="">
+                <div class="layer">
+                    <h3> Coding </h3>
+                    <p> One responsive site i made and designed using html,css and javascript</p>
+                    <a href="https://kathrinail.github.io/"> <i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+   </div>
+
+   
+    </div>
+   </div>
+
+
+   <script> 
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab (tabname) {
+    for (tablink of tablinks){
+    tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+    
+</body>
+</html>
